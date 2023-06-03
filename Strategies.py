@@ -41,7 +41,7 @@ def sma(data, freq,window, plot_data={1:[('SMA',None, 'red')]}):
     
     return df
 
-def adx(data , freq=14, window=20, down_level=25, plot_data={2:[('plus_di',None, 'green'),('minus_di',None,'red'),               ('adx','down_level', 'blue')]}):
+def adx(data , freq=14, window=20, down_level=25, plot_data={2:[('plus_di',None, 'green'),('minus_di',None,'red'),('adx','down_level', 'blue')]}):
 
         ''' Prepares the Data for Backtesting.
         '''
