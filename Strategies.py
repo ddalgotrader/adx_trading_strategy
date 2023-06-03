@@ -56,8 +56,7 @@ def adx(data , freq=14, window=20, down_level=25, plot_data={2:[('plus_di',None,
         df['adx']=ta.ADX(df['High'],df['Low'], df['Close'], window)
         df['plus_di']=ta.PLUS_DI(df['High'],df['Low'], df['Close'], window)
         df['minus_di']=ta.MINUS_DI(df['High'],df['Low'], df['Close'], window)
-        df['plus_di_shift']=df['plus_di'].shift(1)
-        df['minus_di_shift']=df['minus_di'].shift(1)
+       
 
         conditions=[ (df['plus_di']>df['minus_di']) & (df['adx']>down_level),
                      (df['minus_di']>df['plus_di']) & (df['adx']>down_level)]
